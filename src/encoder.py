@@ -25,7 +25,6 @@ def encode(data, window_size=10, lookahead_size=5):
             current_position += 1
 
         else:
-            # Make sure there is a next character for the token
             if current_position + match_length >= len(data):
                 match_length = len(data) - current_position - 1
 
